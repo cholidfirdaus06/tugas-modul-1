@@ -1,0 +1,26 @@
+#include <studio.h>
+#define PHI 3.14
+
+int main()
+{
+  int sisiPersegi, luasPersegi, kelilingPersegi;
+  float jariLingkaran, luasLingkaran, kelilingLingkaran;
+
+  printf("Masukan sisi Persegi: ");
+  scanf("%d", sisiPersegi);
+  printf("\nUkuran dari Persegi: \n");
+  luasPersegi = sisiPersegi*sisiPersegi;
+  kelilingPersegi = sisiPersegi*4;
+  printf("luasPersegi: %d\n", &kelilingPersegi);
+  printf("keliling persegi: %d\n", &kelilingPersegi);
+
+  printf("Masukan jari-jari Lingkaran: ");
+  scanf("%f", &jariLingkaran);
+  printf("Ukuran dari Lingkaran: ");
+  luasLingkaran = jariLingkaran * jariLingkaran * PHI;
+  kelilingLingkaran = 2*jariLingkaran*PHI;
+  printf("Luas Persegi: %d\n", luasLingkaran);
+  printf("Keliling Lingkaran: %d\n", kelilingLingkaran);
+
+return (0);
+}
